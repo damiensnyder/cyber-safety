@@ -48,6 +48,15 @@
         $(".related-bar").hide();
         $(".works-cited-tab").show();
       });
+
+      $("#case-study-btn").click(function() {
+        event.stopPropagation();
+        $("#case-study-menu").toggle();
+      });
+
+      $(document).click(function() {
+          $(".dropdown-menu").hide();
+      });
     });
   </script>
 
@@ -55,8 +64,8 @@
     <table class="nav-bar">
       <tr>
         <td class="nav-item info-btn">Info</td>
-        <td class="nav-item">Case Studies
-          <div class="dropdown-menu">
+        <td class="nav-item" id="case-study-btn">Case Studies
+          <div class="dropdown-menu" id="case-study-menu">
             <div class="dropdown-item case-study-1-btn">Case Study 1</div>
             <div class="dropdown-item case-study-2-btn">Case Study 2</div>
           </div>
