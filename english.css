@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-flow: column;
   margin: 0;
-  
+
   font-size: 18px;
   background-color: #202020;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -237,6 +237,15 @@ img {
   padding: 3px;
 
   font-style: italic;
+}
+
+/* For Works Cited page */
+.hanging-indent {
+  padding-left: 48px;
+  text-indent: -42px;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* On medium screens */
