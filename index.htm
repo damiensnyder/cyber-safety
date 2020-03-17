@@ -54,13 +54,25 @@
         window.scrollTo(0, 0);
       });
 
+      $(".bios-btn").click(function() {
+        $(".container").hide();
+        $(".related-bar").hide();
+        $(".bios-tab").show();
+        window.scrollTo(0, 0);
+      });
+
       $("#case-study-btn").click(function() {
         event.stopPropagation();
         $("#case-study-menu").toggle();
       });
 
+      $("#about-btn").click(function() {
+        event.stopPropagation();
+        $("#about-menu").toggle();
+      });
+
       $(document).click(function() {
-          $(".dropdown-menu").hide();
+        $(".dropdown-menu").hide();
       });
     });
   </script>
@@ -75,8 +87,12 @@
             <div class="dropdown-item case-study-2-btn">Case Study 2</div>
           </div>
         </td>
-        <td class="nav-item activist-poetics-btn">Activist Poetics
-        <td class="nav-item works-cited-btn">Works Cited</td>
+        <td class="nav-item activist-poetics-btn">Activist Poetics</td>
+        <td class="nav-item" id="about-btn">About
+          <div class="dropdown-menu" id="about-menu">
+            <div class="dropdown-item works-cited-btn">Works Cited</div>
+            <div class="dropdown-item bios-btn">Bios</div>
+          </div>
         </td>
         <td></td>
       </tr>
@@ -479,6 +495,50 @@
       </p>
       <p class="hanging-indent">
         “Summary of Devices Functions on Smart Lampposts.” GovHK, 14 Jan. 2020.
+      </p>
+    </div>
+
+    <div class="container bios-tab">
+      <h2>
+        Bios
+      </h2>
+
+      <p>
+        Gene Wang: I helped draft designs for the website’s different webpages
+        and layouts. In doing this, I made sure there were features that would
+        link together the different sections and create consistent cohesion
+        based on the feedback I collected during our midterm pitch. I also
+        created and set up a slideshow to present the website.
+      </p>
+
+      <p>
+        Nels Schimek: My role was to research cybersecurity and facial
+        recognition technology, and write up short articles about related topics
+        to publish on the website, with the goal of providing information about
+        the technologies to readers.
+      </p>
+
+      <p>
+        Damien Snyder: I created the code for the final iteration of the website
+        and inserted the content pieces into it. I also put the website online
+        so others could see it.
+      </p>
+
+      <p>
+        Tiffany Pham: I researched and created the Hong Kong Case Study page
+        along with the activist poetics page, also connected to the Hong Kong
+        Protests. I did advertising to direct traffic to our website via
+        Instagram post.
+      </p>
+
+      <p>
+        Fernanda Oropeza: For this project I was in charge of doing the U.S.
+        case study so that there was a more direct link between the issues that
+        are presented and the audience’s life. There ...
+      </p>
+
+      <p>
+        Andrew Yu: ...
       </p>
     </div>
 

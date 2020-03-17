@@ -316,6 +316,11 @@ img {
   .poem {
     padding: 2.5px;
   }
+
+  .hanging-indent {
+    padding-left: 40px;
+    text-indent: -35px;
+  }
 }
 
 /* On small screens */
@@ -381,5 +386,10 @@ img {
 
   .poem {
     padding: 2px;
+  }
+
+  .hanging-indent {
+    padding-left: 32px;
+    text-indent: -28px;
   }
 }
